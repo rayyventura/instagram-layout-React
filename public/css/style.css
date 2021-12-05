@@ -221,8 +221,8 @@ body {
 
 .sidebar {
   padding-top: 24px;
-  position: sticky;
-  top: 88px;
+  position: fixed;
+  left: 65%;
 }
 
 .sidebar>.usuario {
@@ -317,6 +317,12 @@ body {
 .logo-mobile,
 .instagram-mobile {
   display: none !important;
+}
+
+@media(max-width: 1010px) {
+  .sidebar {
+    left: 68%;
+  }
 }
 
 @media (max-width: 935px) {
