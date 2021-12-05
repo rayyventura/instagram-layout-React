@@ -16,16 +16,16 @@ function Sugestao({img, nome, razao}) {
     )
 }
 
-export default function Sidebar() {
+export default function Sidebar({img, id, nome}) {
     
     return(
         <aside class="sidebar">
             
           <header class="usuario">
-            <img src="assets/img/catanacomics.svg" alt=''/>
+            <img src={img} alt=''/>
             <div class="texto">
-              <strong>catanacomics</strong>
-              Catana
+              <strong>{id}</strong>
+              {nome}
             </div>
           </header>
 

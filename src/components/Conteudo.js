@@ -6,7 +6,7 @@ export default function Conteudo() {
     return(
         <div class="corpo">
             <Esquerda />
-            <Sidebar />
+            <Sidebar img = 'assets/img/catanacomics.svg' id = 'catanacomics' nome = 'Catana'/>
             <FundoMobile />
         </div>
     )
