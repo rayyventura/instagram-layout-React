@@ -2,16 +2,16 @@ import {sugestoes} from './Informacoes'
 
 function Sugestao({img, nome, razao}) {
     return(
-        <div class="sugestao">
-            <div class="usuario">
+        <div className="sugestao">
+            <div className="usuario">
             <img src={img} alt=''/>
-            <div class="texto">
-                <div class="nome">{nome}</div>
-                <div class="razao">{razao}</div>
+            <div className="texto">
+                <div className="nome">{nome}</div>
+                <div className="razao">{razao}</div>
             </div>
             </div>
 
-            <div class="seguir">Seguir</div>
+            <div className="seguir">Seguir</div>
       </div>
     )
 }
@@ -19,19 +19,19 @@ function Sugestao({img, nome, razao}) {
 export default function Sidebar({img, id, nome}) {
     
     return(
-        <aside class="sidebar">
+        <aside className="sidebar">
             
-          <header class="usuario">
+          <header className="usuario">
             <img src={img} alt=''/>
-            <div class="texto">
+            <div className="texto">
               <strong>{id}</strong>
               {nome}
             </div>
           </header>
 
-          <section class="sugestoes">
+          <section className="sugestoes">
 
-            <div class="titulo">
+            <div className="titulo">
               Sugestões para você
               <div>Ver tudo</div>
             </div>
@@ -47,12 +47,12 @@ export default function Sidebar({img, id, nome}) {
                         ))
                 }
 
-          <footer class="links">
+          <footer className="links">
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos 
             • Localizações • Contas mais relevantes • Hashtags • Idioma
           </footer>
 
-          <div class="copyright">
+          <div className="copyright">
             © 2021 INSTAGRAM DA META
           </div>
           </section>

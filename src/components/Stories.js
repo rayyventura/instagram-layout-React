@@ -1,11 +1,11 @@
 
 function Story({nome,src}) {
    return(
-                <div class="story">
-                    <div class="imagem">
+                <div className="story">
+                    <div className="imagem">
                         <img src={src} alt={nome}/>
                     </div>
-                    <div class="usuario">
+                    <div className="usuario">
                        {nome}
                     </div>
                 </div>
@@ -47,11 +47,11 @@ export default function Stories() {
         }  
     ];
     return(
-            <section class="stories">
+            <section className="stories">
                 {
                     nomes.map((n) =>  <Story nome ={n.nome} src = {n.src} />)
                 }
-                <div class="setinha">
+                <div className="setinha">
                     <ion-icon name="chevron-forward-circle"></ion-icon>
                 </div>
             </section>

@@ -4,7 +4,7 @@ import IonIcon from './IonIcon'
 export default function FundoMobile() {
 
         return(
-            <nav class="fundo-mobile">
+            <nav className="fundo-mobile">
                 {
                   iconNomes.map(n=>
                     (

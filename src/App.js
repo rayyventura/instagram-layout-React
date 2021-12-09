@@ -7,10 +7,10 @@ export default function App() {
 
     return (
 
-        <div>
+        <>
             <Nav />
             <Conteudo />
-        </div>
+        </>
 
     )
 }

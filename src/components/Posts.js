@@ -3,23 +3,23 @@ import {postInfos} from './Informacoes'
 
 function Post({imgUsuario, idUsuario, imgPost, imgLikes, curtidoPor, nCurtidas}) {
     return(
-        <article class="post">
-            <div class="topo">
-              <div class="usuario">
+        <article className="post">
+            <div className="topo">
+              <div className="usuario">
                 <img src={imgUsuario} alt=''/>
                 {idUsuario}
               </div>
-              <div class="acoes">
+              <div className="acoes">
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
-              </div>
+              </div> 
             </div>
 
-            <div class="conteudo">
+            <div className="conteudo">
               <img src={imgPost} alt =''/>
             </div>
 
-            <div class="fundo">
-              <div class="acoes">
+            <div className="fundo">
+              <div className="acoes">
                 <div>
                   <ion-icon name="heart-outline"></ion-icon>
                   <ion-icon name="chatbubble-outline"></ion-icon>
@@ -30,9 +30,9 @@ function Post({imgUsuario, idUsuario, imgPost, imgLikes, curtidoPor, nCurtidas})
                 </div>
               </div>
 
-              <div class="curtidas">
+              <div className="curtidas">
                 <img src={imgLikes} alt=''/>
-                <div class="texto">
+                <div className="texto">
                   Curtido por <strong>{curtidoPor}</strong> e <strong>outras {nCurtidas} pessoas</strong>
                 </div>
               </div>
@@ -43,7 +43,7 @@ function Post({imgUsuario, idUsuario, imgPost, imgLikes, curtidoPor, nCurtidas})
 export default function Posts() {
         
     return ( 
-        <div class="posts">
+        <div className="posts">
         {
             postInfos.map(n => 
             (
