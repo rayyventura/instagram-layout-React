@@ -1,4 +1,4 @@
-# Instagram with REACT
+# Instagram with React
 
 **Site Published at:** https://instagram-layout-with-react.vercel.app/
 
